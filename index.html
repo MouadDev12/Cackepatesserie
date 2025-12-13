@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SweetCake </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="container">
+  <div class="nav">
+    <div class="brand">
+      <div class="logo-mark" aria-hidden="true">SC</div>
+      <div>
+        <div style="font-family:'Playfair Display';font-weight:700;color:var(--text)">SweetCake</div>
+        <div class="small muted">Pâtisserie artisanale</div>
+      </div>
+    </div>
+    <nav>
+      <button class="hamburger" id="hamb">☰</button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menuSection">Menu</a></li>
+        <li><a href="#aproposSection">À propos</a></li>
+        <li><a href="#contactSection">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="cta" href="#contactSection">Commander</a>
+    </div>
+  </div>
+</header>
+
+<main class="container" id="home">
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="badge">NEW • Signature</div>
+      <h1>Bite into <span style="color:var(--accent)">Happiness.</span></h1>
+      <p>Gâteaux artisanaux, viennoiseries fraîches et créations personnalisées. Commande en ligne — livraison Rabat & environs.</p>
+      <div style="margin-top:16px;display:flex;gap:12px">
+        <a class="cta" href="#menuSection">Voir le menu</a>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="slider" id="heroSlider">
+        <img src="images/gateau1.png" alt="Gâteau 1">
+        <img src="https://images.unsplash.com/photo-1541592106381-3b3c8e3f8cc1?q=80&w=1200&auto=format&fit=crop" alt="Gâteau 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="menuSection" class="panel products-panel">
+    <h3>Menu</h3>
+    <div id="products" class="products"></div>
+  </section>
+
+  <section id="aproposSection" class="apropos">
+  <div class="apropos-glass">
+    
+    <div class="apropos-text">
+      <h3>À propos de SweetCake</h3>
+      <p>
+        Depuis 2019, SweetCake prépare des créations artisanales faites avec passion :
+        gâteaux raffinés, desserts modernes et viennoiseries fraîches chaque matin.
+        Nous privilégions des ingrédients de qualité pour offrir un goût unique et authentique.
+      </p>
+
+      <div class="apropos-buttons">
+        <a href="#menuSection" class="btn-primary">Voir le menu</a>
+        <a href="#contactSection" class="btn-outline">Nous contacter</a>
+      </div>
+    </div>
+
+    <div class="apropos-img">
+      <img src="images/Apropos.png" alt="Pâtisserie SweetCake">
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contactSection" style="margin-top:36px">
+    <div class="panel">
+      <h3>Contact</h3>
+      <form id="contactForm" style="position:relative">
+        <input required id="contactName" placeholder="Nom complet" class="contact-input">
+        <input required id="contactEmail" placeholder="Email / Téléphone" class="contact-input">
+        <textarea required id="contactMessage" rows="4" placeholder="Message" class="contact-textarea"></textarea>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button class="cta" type="submit">Envoyer</button>
+          <button type="button" id="resetContact">Réinitialiser</button>
+        </div>
+      </form>
+      <div id="map"></div>
+    </div>
+  </section>
+</main>
+
+
+<section id="order" class="container" style="margin-top:80px">
+  <h2 style="font-family:'Playfair Display';font-size:32px;color:#222;margin-bottom:12px">Commande en ligne</h2>
+  <p class="small muted" style="margin-bottom:20px">Passez votre commande en quelques clics.</p>
+
+  <form style="background:var(--card);padding:22px;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,0.05)">
+    <label>Nom complet</label>
+    <input type="text" style="width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #ddd">
+
+    <label>Téléphone</label>
+    <input type="text" style="width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #ddd">
+
+    <label>Produit</label>
+    <select style="width:100%;padding:12px;border-radius:10px;border:1px solid #ddd;margin:8px 0">
+      <option>Cupcake</option>
+      <option>Cheesecake</option>
+      <option>Macarons</option>
+      <option>Red Velvet</option>
+    </select>
+
+    <label>Quantité</label>
+    <input type="number" value="1" min="1" style="width:100%;padding:12px;margin:8px 0;border-radius:10px;border:1px solid #ddd">
+
+    <button class="btn-primary" style="margin-top:12px;width:100%">Commander</button>
+  </form>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-logo">SweetCake</div>
+    <div class="small">Créations sucrées — artisanat & goût</div>
+  </div>
+  <div class="footer-links">
+    <h4>Liens rapides</h4>
+    <a href="#home">Accueil</a>
+    <a href="#menuSection">Menu</a>
+    <a href="#contactSection">Contact</a>
+  </div>
+  <div>
+    <h4>Suivez-nous</h4>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="small">© <span id="year"></span> SweetCake</div>
+</footer>
+
+ 
+  <script src="script.js">
+   
+  </script>
+
+</body>
+</html>
