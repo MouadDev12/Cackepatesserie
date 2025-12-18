@@ -12,7 +12,7 @@ function App() {
   return (
     <CartProvider>
       <Header />
-      
+  
       <main className="container">
         <Hero />
 
