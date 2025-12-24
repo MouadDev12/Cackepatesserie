@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sonar": "sonar-scanner -Dsonar.projectKey=project201 -Dsonar.sources=src -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_fba0164b4e01778e936b5418b6aca08ff0017fe7"
   },
   "dependencies": {
     "framer-motion": "^12.23.26",
