@@ -1,51 +1,51 @@
 ##  🍰 SweetCake – E-commerce de Pâtisserie Artisanale
 
-SweetCake est une application e-commerce moderne développée avec React + Vite, permettant de présenter des produits de pâtisserie artisanale et de gérer un panier de commande dynamique.
+**SweetCak**e est une application e-commerce moderne développée avec **React + Vite**, permettant de présenter des produits de pâtisserie artisanale et de gérer **un panier de commande dynamique**.
 
----
+
 Le projet met l’accent sur :
 
-une interface élégante et responsive
+**une interface élégante et responsive**
 
-une gestion du panier avec Context API
+**une gestion du panier avec Context API**
 
-une expérience utilisateur simple et fluide
+**une expérience utilisateur simple et fluide**
 
 ---
 ## 🚀 Aperçu du projet
 
-Catalogue de produits (gâteaux, viennoiseries, desserts)
+**Catalogue de produits (gâteaux, viennoiseries, desserts)**
 
-Ajout / suppression de produits dans le panier
+**Ajout / suppression de produits dans le panier**
 
-Gestion des quantités
+**Gestion des quantités**
 
-Calcul automatique du total
+**Calcul automatique du total**
 
-Formulaire de commande et contact
+**Formulaire de commande et contact**
 
-Design moderne inspiré e-commerce
+**Design moderne inspiré e-commerce**
 
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-React 18
+**React 18**
 
-Vite
+**Vite**
 
-Context API (gestion du panier)
+**Context API (gestion du panier)**
 
-JavaScript (ES6+)
+**JavaScript (ES6+)**
 
-HTML5
+**HTML5**
 
-CSS moderne
+**CSS moderne**
 
-Font Awesome (icônes)
+**Font Awesome (icônes)**
 
-Responsive Design (Desktop & Mobile)
+**Responsive Design (Desktop & Mobile)**
 
 
 ---
@@ -86,7 +86,7 @@ Responsive Design (Desktop & Mobile)
 
 
  ##  🛒 Fonctionnalités principales
-✔️ Gestion du panier
+**✔️ Gestion du panier**
 
 Ajout de produits
 
@@ -96,13 +96,13 @@ Modification des quantités
 
 Calcul du total en temps réel
 
-✔️ Produits
+**✔️ Produits**
 
 Affichage dynamique depuis un fichier products.js
 
 Cartes produits avec image, description et prix
 
-✔️ Formulaire de commande
+**✔️ Formulaire de commande**
 
 Récapitulatif automatique du panier
 
@@ -110,7 +110,7 @@ Simulation d’envoi de commande
 
 Réinitialisation du panier après validation
 
-✔️ Interface utilisateur
+**✔️ Interface utilisateur**
 
 Design moderne
 
