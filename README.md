@@ -2,7 +2,7 @@
 
 SweetCake est une application e-commerce moderne développée avec React + Vite, permettant de présenter des produits de pâtisserie artisanale et de gérer un panier de commande dynamique.
 
-
+---
 Le projet met l’accent sur :
 
 une interface élégante et responsive
@@ -11,7 +11,7 @@ une gestion du panier avec Context API
 
 une expérience utilisateur simple et fluide
 
-
+---
 ## 🚀 Aperçu du projet
 
 Catalogue de produits (gâteaux, viennoiseries, desserts)
@@ -27,7 +27,7 @@ Formulaire de commande et contact
 Design moderne inspiré e-commerce
 
 
-
+---
 
 ## 🛠️ Technologies utilisées
 
@@ -48,7 +48,7 @@ Font Awesome (icônes)
 Responsive Design (Desktop & Mobile)
 
 
-
+---
 📂 Structure du projet
 
 ```bash
@@ -118,6 +118,10 @@ Navigation fluide
 
 Responsive (mobile / desktop)
 
+
+
+---
+
 ## ⚙️ Installation et lancement du projet
 ## 1️⃣ Cloner le dépôt
 git clone https://github.com/TON-USERNAME/sweetcake-react.git
@@ -137,5 +141,6 @@ npm run dev
 http://localhost:5173
 
 
+---
 
 ✨ N’hésite pas à mettre une ⭐ sur le repo si le projet te plaît !
