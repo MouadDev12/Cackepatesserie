@@ -10,7 +10,7 @@ export const translations = {
     'hero.badge': 'NOUVEAU • Signature',
     'hero.title1': 'Bite into',
     'hero.title2': 'Happiness.',
-    'hero.description': 'Gâteaux artisanaux, viennoiseries fraîches et créations personnalisées. Commande en ligne — livraison Rabat & environs.',
+    'hero.description': 'Gâteaux artisanaux, viennoiseries fraîches et créations personnalisées. Commande en ligne — livraison Agadir & environs.',
     'hero.cta': 'Voir le menu',
     
     // Menu
