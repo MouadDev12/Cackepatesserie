@@ -75,7 +75,7 @@ export const translations = {
     'hero.badge': 'جديد • توقيع',
     'hero.title1': 'تذوق',
     'hero.title2': 'السعادة.',
-    'hero.description': 'كعكات يدوية، فطائر طازجة وإبداعات مخصصة. طلب عبر الإنترنت — توصيل الرباط والنواحي.',
+    'hero.description': 'كعكات يدوية، فطائر طازجة وإبداعات مخصصة. طلب عبر الإنترنت — توصيل اكادير والنواحي.',
     'hero.cta': 'شاهد القائمة',
     
     // Menu
@@ -115,7 +115,7 @@ export const translations = {
     'footer.tagline': 'حلويات يدوية فاخرة. إبداعات حلوة مصنوعة بشغف وحرفية ممتازة.',
     'footer.quickLinks': 'روابط سريعة',
     'footer.contact': 'تواصل معنا',
-    'footer.location': 'الرباط، المغرب',
+    'footer.location': 'اكادير، المغرب',
     'footer.phone': '+212 5XX-XXXXXX',
     'footer.email': 'contact@sweetcake.ma',
     'footer.copyright': '© {year} SweetCake - جميع الحقوق محفوظة',
