@@ -1,21 +1,21 @@
+import { useLanguage } from '../context/LanguageContext';
+
 const About = () => {
+  const { t } = useLanguage();
+  
   return (
     <section id="apropos" className="apropos">
       <div className="apropos-glass">
         <div className="apropos-text">
-          <h3>À propos de SweetCake</h3>
-          <p>
-            Depuis 2019, SweetCake prépare des créations artisanales faites avec passion :
-            gâteaux raffinés, desserts modernes et viennoiseries fraîches chaque matin.
-            Nous privilégions des ingrédients de qualité pour offrir un goût unique et authentique.
-          </p>
+          <h3>{t('about.title')}</h3>
+          <p>{t('about.description')}</p>
           <div className="apropos-buttons">
-            <a href="#menu" className="btn-primary">Voir le menu</a>
-            <a href="#contact" className="btn-outline">Nous contacter</a>
+            <a href="#menu" className="btn-primary">{t('about.cta1')}</a>
+            <a href="#contact" className="btn-outline">{t('about.cta2')}</a>
           </div>
         </div>
         <div className="apropos-img">
-          <img src="/images/Apropos.png" alt="Pâtisserie SweetCake" />
+          <img src="/images/Apropos.png" alt="SweetCake" />
         </div>
       </div>
     </section>

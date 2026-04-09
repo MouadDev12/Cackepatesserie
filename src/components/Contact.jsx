@@ -1,26 +1,28 @@
 import { useState } from 'react';
 import { useCart } from '../context/CartContext';
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const { cart, getTotal, clearCart } = useCart();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    let message = `Nom: ${formData.name}\nEmail/Téléphone: ${formData.email}\n\n`;
+    let message = `${t('contact.name')}: ${formData.name}\n${t('contact.email')}: ${formData.email}\n\n`;
     
     if (cart.length > 0) {
-      message += 'Commande:\n';
+      message += `${t('contact.orderSummary')}:\n`;
       cart.forEach(item => {
-        message += `- ${item.name} x${item.quantity} = ${item.price * item.quantity} MAD\n`;
+        message += `- ${item.name} x${item.quantity} = ${item.price * item.quantity} ${t('menu.currency')}\n`;
       });
-      message += `\nTotal: ${getTotal()} MAD\n\n`;
+      message += `\n${t('cart.total')}: ${getTotal()} ${t('menu.currency')}\n\n`;
     }
     
-    message += `Message: ${formData.message}`;
+    message += `${t('contact.message')}: ${formData.message}`;
     
-    alert('Commande envoyée avec succès!\n\n' + message);
+    alert(`${t('contact.success')}\n\n${message}`);
     setFormData({ name: '', email: '', message: '' });
     clearCart();
   };
@@ -28,20 +30,20 @@ const Contact = () => {
   return (
     <section id="contact" style={{ marginTop: '36px' }}>
       <div className="panel">
-        <h3>Contact & Commande</h3>
+        <h3>Contact et Commander</h3>
         <form onSubmit={handleSubmit}>
           <input
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            placeholder="Nom complet"
+            placeholder={t('contact.name')}
             className="contact-input"
           />
           <input
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            placeholder="Email / Téléphone"
+            placeholder={t('contact.email')}
             className="contact-input"
           />
           <textarea
@@ -49,13 +51,13 @@ const Contact = () => {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             rows="4"
-            placeholder="Message ou détails de commande"
+            placeholder={t('contact.message')}
             className="contact-textarea"
           />
-          <div style={{ display: 'flex', gap: '8px', marginTop: '12px' }}>
-            <button className="cta" type="submit">Envoyer</button>
-            <button type="button" onClick={() => setFormData({ name: '', email: '', message: '' })}>
-              Réinitialiser
+          <div className="contact-buttons">
+            <button className="btn-envoyer" type="submit">{t('contact.send')}</button>
+            <button className="btn-reinitialiser" type="button" onClick={() => setFormData({ name: '', email: '', message: '' })}>
+              {language === 'ar' ? 'إعادة تعيين' : 'Réinitialiser'}
             </button>
           </div>
         </form>
