@@ -44,12 +44,16 @@ function App() {
               </div>
             </section>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: '24px', marginTop: '36px' }}>
-              <div>
-                <About />
-                <Contact />
+            <div className="about-cart-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px', marginTop: '36px' }}>
+              <About />
+              <div className="cart-horizontal" style={{ display: 'flex', flexDirection: 'column', gap: '24px', padding: '32px', background: 'var(--card)', borderRadius: 'var(--radius)', boxShadow: 'var(--shadow-soft)', border: '1px solid rgba(201, 169, 97, 0.15)' }}>
+                <h3 style={{ fontFamily: '"Playfair Display", serif', fontSize: '28px', color: 'var(--text)', margin: '0', position: 'relative', paddingBottom: '12px' }}>
+                  Votre Panier
+                  <span style={{ position: 'absolute', bottom: '0', left: '0', width: '60px', height: '2px', background: 'linear-gradient(90deg, var(--gold), var(--gold-light))' }}></span>
+                </h3>
+                <Cart />
               </div>
-              <Cart />
+              <Contact />
             </div>
           </main>
 

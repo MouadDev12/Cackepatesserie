@@ -25,7 +25,7 @@ export const translations = {
     
     // About
     'about.title': 'À propos de SweetCake',
-    'about.description': 'SweetCake est une pâtisserie artisanale spécialisée dans les gâteaux sur mesure et les viennoiseries fraîches. Chaque création est préparée avec des ingrédients de qualité premium et une passion inégalée pour l\'art de la pâtisserie.',
+    'about.description': 'Nous créons des gâteaux d\'exception et des viennoiseries fraîches, élaborés avec des ingrédients nobles et un savoir-faire artisanal. Chaque douceur est une œuvre d\'art pâtissière, façonnée avec passion pour sublimer vos moments précieux.',
     'about.cta1': 'Notre histoire',
     'about.cta2': 'Contactez-nous',
     
@@ -90,7 +90,7 @@ export const translations = {
     
     // About
     'about.title': 'عن SweetCake',
-    'about.description': 'SweetCake هي مخبزة يدوية متخصصة في الكعكات المخصصة والفطائر الطازجة. يتم تحضير كل إبداع بمكونات عالية الجودة وشغف لا مثيل له بفن الحلويات.',
+    'about.description': 'نصنع كعكات استثنائية ومخبوزات طازجة، مصنوعة من مكونات نبيلة ومهارة يدوية. كل حلوى هي تحفة فنية، تشكّل بشغف لتجميل لحظاتكم الثمينة.',
     'about.cta1': 'قصتنا',
     'about.cta2': 'اتصل بنا',
     
